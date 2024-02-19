@@ -6,10 +6,10 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
-public class DummyAccountRepository implements AccountRepository {
-    @Override
-    public List<Account> findAll() {
-        return List.of(new Account("1", 1000000000));
-    }
-}
+//@Component
+//public class DummyAccountRepository implements AccountRepository {
+//    @Override
+//    public List<Account> findAll() {
+//        return List.of(new Account("1", 1000000000));
+//    }
+//}
