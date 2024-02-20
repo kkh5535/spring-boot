@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/account")
+@RequestMapping("/accounts")
 public class AccountController {
     private final AccountService accountService;
 
