@@ -1,0 +1,13 @@
+POST http://localhost:8080/management/fail
+Content-Type: application/json
+
+{}
+
+
+###
+GET http://localhost:8080/actuator/health
+Accept: application/json
+
+###
+GET http://localhost:8080/actuator/info
+Accept: application/json
