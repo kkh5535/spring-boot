@@ -3,6 +3,7 @@ package com.nhnacademy.edu.springboot.Account.domain.adapter.in;
 import com.nhnacademy.edu.springboot.Account.domain.Account;
 import com.nhnacademy.edu.springboot.Account.domain.AccountService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.nio.file.Path;
@@ -25,6 +26,7 @@ public class AccountController {
     }
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public Account createAccount(@RequestBody Account account) {
         return accountService.createAccount(account);
     }
